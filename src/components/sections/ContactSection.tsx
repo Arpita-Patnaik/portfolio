@@ -28,7 +28,7 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "Connect with me",
+    value: "Connect with me (Click to connect)",
     link: "https://www.linkedin.com/in/arpita-patnaik-989731333/",
     color: "text-primary-glow",
     bgColor: "bg-primary-glow/20",
@@ -36,7 +36,7 @@ const contactInfo = [
   {
     icon: Github,
     label: "GitHub",
-    value: "View my code",
+    value: "View my code (Click to view)",
     link: "https://github.com/Arpita-Patnaik",
     color: "text-accent-soft",
     bgColor: "bg-accent-soft/20",

@@ -89,16 +89,14 @@ export function HeroSection() {
                 
                 {/* Profile image placeholder with circular frame */}
                 <div className="relative">
-  <div className="w-96 h-96 sm:w-[28rem] sm:h-[28rem] rounded-full bg-gradient-to-br from-primary/20 via-transparent to-accent/20 p-1 shadow-glow flex items-center justify-center">
-    <img
-      src="/arpita-pf.jpg"
-      alt="Arpita Patnaik - Profile Picture"
-      className="rounded-full w-80 h-80 max-w-full object-cover border-4 border-primary/30 shadow-lg transition-transform hover:scale-105"
-    />
-  </div>
-</div>
-
-
+                  <div className="w-96 h-96 sm:w-[28rem] sm:h-[28rem] rounded-full bg-gradient-to-br from-primary/20 via-transparent to-accent/20 p-1 shadow-glow flex items-center justify-center">
+                    <img
+                      src="/portfolio/arpita-pf.jpg"
+                      alt="Arpita Patnaik - Profile Picture"
+                      className="rounded-full w-80 h-80 max-w-full object-cover border-4 border-primary/30 shadow-lg transition-transform hover:scale-105"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
