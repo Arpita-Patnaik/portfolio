@@ -5,17 +5,17 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
   {
-    icon: "💜",
+    // icon: "💜",
     title: "Data Science",
     description: "Transforming raw data into meaningful insights through ML, statistics, and visualization",
   },
   {
-    icon: "💙", 
+    // icon: "💙", 
     title: "Machine Learning",
     description: "Building predictive models and intelligent systems using cutting-edge algorithms",
   },
   {
-    icon: "🧡",
+    // icon: "🧡",
     title: "Frontend Development", 
     description: "Creating beautiful, responsive user interfaces with modern web technologies",
   },
@@ -40,11 +40,11 @@ export function HeroSection() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-2 text-sm font-medium text-primary animate-fade-in">
                   <Sparkles size={16} />
-                  <span>HELLO THERE, NICE TO MEET YOU, I AM</span>
+                  <span>HELLO THERE! I AM</span>
                 </div>
                 
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-poppins text-glow animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                  Arpita
+                  Arpita Patnaik
                 </h1>
                 
                 <div className="text-xl sm:text-2xl text-muted-foreground font-medium animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
@@ -107,7 +107,7 @@ export function HeroSection() {
               {services.map((service, index) => (
                 <Card key={index} className="gradient-card border-border transition-smooth hover:shadow-glow group">
                   <CardContent className="p-6 text-center">
-                    <div className="text-4xl mb-4">{service.icon}</div>
+                    {/* <div className="text-4xl mb-4">{service.icon}</div> */}
                     <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-smooth">
                       {service.title}
                     </h3>
