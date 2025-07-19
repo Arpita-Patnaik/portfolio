@@ -55,7 +55,7 @@ export function Navigation() {
             onClick={() => scrollToSection('home')}
             className="text-2xl font-bold font-poppins text-primary hover:text-accent transition-smooth"
           >
-            Arpita
+            Arpita Patnaik
           </button>
 
           {/* Desktop Navigation */}
