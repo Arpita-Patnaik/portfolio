@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 import { Mail, Phone, Linkedin, Github, Send, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -12,7 +13,7 @@ const contactInfo = [
     icon: Mail,
     label: "Email",
     value: "arpitapatnaik1367@gmail.com",
-    link: "mailto:arpitapatnaik1367@gmail.com",
+    // link: "mailto:arpitapatnaik1367@gmail.com",
     color: "text-primary",
     bgColor: "bg-primary/20",
   },
@@ -20,7 +21,7 @@ const contactInfo = [
     icon: Phone,
     label: "Phone",
     value: "+91 9337013957",
-    link: "tel:+919337013957",
+    // link: "tel:+919337013957",
     color: "text-accent",
     bgColor: "bg-accent/20",
   },
@@ -28,7 +29,7 @@ const contactInfo = [
     icon: Linkedin,
     label: "LinkedIn",
     value: "Connect with me",
-    link: "#",
+    link: "https://www.linkedin.com/in/arpita-patnaik-989731333/",
     color: "text-primary-glow",
     bgColor: "bg-primary-glow/20",
   },
@@ -36,7 +37,7 @@ const contactInfo = [
     icon: Github,
     label: "GitHub",
     value: "View my code",
-    link: "#",
+    link: "https://github.com/Arpita-Patnaik",
     color: "text-accent-soft",
     bgColor: "bg-accent-soft/20",
   },
@@ -60,11 +61,32 @@ export function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    emailjs.send(
+      "service_nk3m4lm",
+      "template_t027l0n",
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      "kp2oGEZcRBk77QCpd"
+    )
+    .then(
+      () => {
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for reaching out. I'll get back to you soon!",
+        });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      },
+      (error) => {
+        toast({
+          title: "Error",
+          description: "Failed to send message. Please try again later.",
+        });
+      }
+    );
   };
 
   return (
@@ -126,9 +148,9 @@ export function ContactSection() {
 
           {/* Contact Form */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <h3 className="text-2xl font-semibold mb-6 text-primary">Send Message</h3>
             <Card className="gradient-card border-border shadow-soft">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-6 text-primary">Send Message</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
@@ -191,25 +213,6 @@ export function ContactSection() {
                 </form>
               </CardContent>
             </Card>
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          <div className="gradient-card p-8 rounded-2xl shadow-soft border border-border max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold mb-4 text-primary">Ready to Collaborate?</h3>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
-              Whether you have a project in mind, want to discuss opportunities, or just want to connect, 
-              I'm always excited to meet like-minded individuals and explore new possibilities.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                Download Resume
-              </Button>
-              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                Schedule a Call
-              </Button>
-            </div>
           </div>
         </div>
       </div>

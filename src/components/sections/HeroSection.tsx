@@ -40,7 +40,7 @@ export function HeroSection() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-2 text-sm font-medium text-primary animate-fade-in">
                   <Sparkles size={16} />
-                  <span>HELLO THERE, NICE TO MEET YOU ❤️, I AM</span>
+                  <span>HELLO THERE, NICE TO MEET YOU, I AM</span>
                 </div>
                 
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-poppins text-glow animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
@@ -89,17 +89,16 @@ export function HeroSection() {
                 
                 {/* Profile image placeholder with circular frame */}
                 <div className="relative">
-                  <div className="w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-gradient-to-br from-primary/20 via-transparent to-accent/20 p-1 shadow-glow">
-                    <div className="w-full h-full rounded-full bg-card border-2 border-primary/30 flex items-center justify-center gradient-card">
-                      <div className="text-center p-8">
-                        <div className="w-32 h-32 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                          <span className="text-4xl">👩‍💻</span>
-                        </div>
-                        <p className="text-sm text-muted-foreground">Profile Photo</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <div className="w-96 h-96 sm:w-[28rem] sm:h-[28rem] rounded-full bg-gradient-to-br from-primary/20 via-transparent to-accent/20 p-1 shadow-glow flex items-center justify-center">
+    <img
+      src="/arpita-pf.jpg"
+      alt="Arpita Patnaik - Profile Picture"
+      className="rounded-full w-80 h-80 max-w-full object-cover border-4 border-primary/30 shadow-lg transition-transform hover:scale-105"
+    />
+  </div>
+</div>
+
+
               </div>
             </div>
           </div>

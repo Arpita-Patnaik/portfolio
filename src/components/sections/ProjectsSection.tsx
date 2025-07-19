@@ -19,8 +19,8 @@ const projects = [
     icon: BarChart3,
     color: "text-primary",
     bgColor: "bg-primary/20",
-    link: "#",
-    github: "#",
+    // link: "#",
+    // github: "#",
   },
   {
     title: "Power BI Dashboard – Amazon Global Sales Analysis",
@@ -38,8 +38,8 @@ const projects = [
     icon: PieChart,
     color: "text-accent",
     bgColor: "bg-accent/20",
-    link: "#",
-    github: "#",
+    // link: "#",
+    // github: "#",
   },
   {
     title: "LC50 Fish Toxicity Analysis",
@@ -56,8 +56,8 @@ const projects = [
     icon: Brain,
     color: "text-primary-glow",
     bgColor: "bg-primary-glow/20",
-    link: "#",
-    github: "#",
+    // link: "#",
+    // github: "#",
   },
 ];
 
@@ -94,14 +94,14 @@ export function ProjectsSection() {
                       <p className="text-muted-foreground mt-2">{project.description}</p>
                     </div>
                   </div>
-                  <div className="flex space-x-2">
+                  {/* <div className="flex space-x-2">
                     <Button size="icon" variant="ghost" className="hover:bg-primary/20">
                       <Github size={20} />
                     </Button>
                     <Button size="icon" variant="ghost" className="hover:bg-primary/20">
                       <ExternalLink size={20} />
                     </Button>
-                  </div>
+                  </div> */}
                 </div>
               </CardHeader>
               

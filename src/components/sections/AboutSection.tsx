@@ -10,7 +10,14 @@ const educationData = [
     current: true,
   },
   {
-    title: "12th & 10th",
+    title: "12th",
+    institution: "K.C. Public School",
+    period: "Completed",
+    icon: School,
+    current: false,
+  },
+  {
+    title: "10th",
     institution: "K.C. Public School",
     period: "Completed",
     icon: School,
