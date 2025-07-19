@@ -8,35 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark theme portfolio colors */
+    --background: 240 10% 8%;
+    --foreground: 280 5% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 240 8% 12%;
+    --card-foreground: 280 5% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 240 8% 12%;
+    --popover-foreground: 280 5% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 270 60% 65%;
+    --primary-foreground: 240 10% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 240 8% 15%;
+    --secondary-foreground: 280 5% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 8% 15%;
+    --muted-foreground: 280 5% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 280 70% 75%;
+    --accent-foreground: 240 10% 8%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 280 5% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 8% 20%;
+    --input: 240 8% 15%;
+    --ring: 270 60% 65%;
 
-    --radius: 0.5rem;
+    /* Custom portfolio tokens */
+    --hero-gradient: linear-gradient(135deg, 240 10% 8%, 270 20% 15%);
+    --card-gradient: linear-gradient(135deg, 240 8% 12%, 240 8% 15%);
+    --primary-glow: 270 60% 65%;
+    --accent-soft: 280 40% 50%;
+    --text-muted: 280 5% 70%;
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(240 10% 5% / 0.3);
+    --shadow-glow: 0 0 30px hsl(270 60% 65% / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +116,36 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--hero-gradient);
+  }
+  
+  .gradient-card {
+    background: var(--card-gradient);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary-glow) / 0.5);
   }
 }
