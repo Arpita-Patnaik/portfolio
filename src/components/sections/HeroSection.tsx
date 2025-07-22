@@ -43,15 +43,17 @@ export function HeroSection() {
                   <span>HELLO THERE! I AM</span>
                 </div>
                 
-                <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-poppins text-glow animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                <h1
+                  className="text-3xl sm:text-5xl lg:text-7xl font-bold font-poppins text-glow animate-fade-in-up"
+                  style={{ animationDelay: '0.2s' }}
+                >
                   Arpita Patnaik
                 </h1>
                 
-                <div className="text-xl sm:text-2xl text-muted-foreground font-medium animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                <div className="text-base sm:text-xl text-muted-foreground font-medium animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                   Aspiring Data Scientist & Angular Developer
                 </div>
-                
-                <p className="text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+                <p className="text-sm sm:text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
                   Passionate about transforming data into impactful solutions through ML, analytics, and clean frontend design.
                 </p>
               </div>
@@ -105,11 +107,11 @@ export function HeroSection() {
                 
                 {/* Profile image placeholder with circular frame */}
                 <div className="relative">
-                  <div className="w-96 h-96 sm:w-[28rem] sm:h-[28rem] rounded-full bg-gradient-to-br from-primary/20 via-transparent to-accent/20 p-1 shadow-glow flex items-center justify-center">
+                  <div className="w-48 h-48 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary/20 via-transparent to-accent/20 p-1 shadow-glow flex items-center justify-center">
                     <img
                       src="/portfolio/arpita-pf.jpg"
                       alt="Arpita Patnaik - Profile Picture"
-                      className="rounded-full w-80 h-80 max-w-full object-cover border-4 border-primary/30 shadow-lg transition-transform hover:scale-105"
+                      className="rounded-full w-40 h-40 sm:w-64 sm:h-64 md:w-80 md:h-80 max-w-full object-cover border-4 border-primary/30 shadow-lg transition-transform hover:scale-105"
                     />
                   </div>
                 </div>
