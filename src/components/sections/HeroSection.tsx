@@ -43,7 +43,7 @@ export function HeroSection() {
                   <span>HELLO THERE! I AM</span>
                 </div>
                 
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-poppins text-glow animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-poppins text-glow animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                   Arpita Patnaik
                 </h1>
                 
@@ -64,15 +64,31 @@ export function HeroSection() {
                   View Projects
                   <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                
-                <Button 
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  variant="outline" 
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+
+                <Button
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                variant="outline" 
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-2 flex items-center gap-2"
                 >
-                  <Mail size={20} className="mr-2" />
-                  Contact Me
+                <Mail size={20} className="mr-2" />
+                Contact Me
                 </Button>
+
+                <a
+                href="/portfolio/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+                >
+                <Button
+                  variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-2 flex items-center gap-2"
+                >
+                  <Download size={18} className="mr-1" />
+                  Resume
+                </Button>
+              </a>
+
               </div>
             </div>
 
