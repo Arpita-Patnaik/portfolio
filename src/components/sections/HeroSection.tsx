@@ -77,7 +77,7 @@ export function HeroSection() {
                 </Button>
 
                 <a
-                href="/portfolio/resume.pdf"
+                href="/portfolio/ArpitaPatnaikResume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
