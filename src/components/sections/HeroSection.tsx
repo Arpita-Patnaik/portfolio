@@ -74,12 +74,12 @@ export function HeroSection() {
                 Contact Me
                 </Button>
 
-                <a
-                href="/portfolio/public/resume.pdf"
+              <a
+                href="resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
-                >
+              >
                 <Button
                   variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-2 flex items-center gap-2"
