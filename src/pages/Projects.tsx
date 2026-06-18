@@ -2,7 +2,7 @@ import { ExternalLink, Github, BarChart3, Brain, PieChart } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-
+ 
 const projects = [
   {
     title: "SmartBiz – Business Management System",

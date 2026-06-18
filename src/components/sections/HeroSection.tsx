@@ -5,19 +5,16 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
   {
-    // icon: "💜",
-    title: "Data Science",
-    description: "Transforming raw data into meaningful insights through ML, statistics, and visualization",
+    title: "Data Science & Analytics",
+    description: "Applying data analysis, feature engineering, and visualization to extract actionable insights from complex datasets",
   },
   {
-    // icon: "💙", 
-    title: "Machine Learning",
-    description: "Building predictive models and intelligent systems using cutting-edge algorithms",
+    title: "Machine Learning & AI",
+    description: "Developing predictive models and intelligent systems using Scikit-learn, with focus on model evaluation and optimization",
   },
   {
-    // icon: "🧡",
-    title: "Frontend Development", 
-    description: "Creating beautiful, responsive user interfaces with modern web technologies",
+    title: "Full-Stack Development",
+    description: "Building scalable web applications using MERN stack with secure APIs and real-time user interaction features",
   },
 ];
 
@@ -51,12 +48,13 @@ export function HeroSection() {
                 </h1>
                 
                 <div className="text-base sm:text-xl text-muted-foreground font-medium animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                  Aspiring Data Scientist & Angular Developer
+                  Data Science & AI Enthusiast | ML Developer
                 </div>
+
                 <p className="text-sm sm:text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-                  Passionate about transforming data into impactful solutions through ML, analytics, and clean frontend design.
+                  Building data-driven solutions through machine learning, analytics, and full-stack development, with a focus on solving real-world problems using intelligent systems.
                 </p>
-              </div>
+                </div>
               
               <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
                 <Button 
@@ -77,7 +75,7 @@ export function HeroSection() {
                 </Button>
 
                 <a
-                href="/portfolio/ArpitaPatnaikResume.pdf"
+                href="/portfolio/public/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"

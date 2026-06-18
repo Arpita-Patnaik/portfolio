@@ -1,36 +1,43 @@
 import { Code, Database, BarChart, Palette } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-
+ 
 const skillCategories = [
   {
-    title: "Languages & Tools",
+    title: "Programming",
     icon: Code,
-    skills: ["Python", "SQL", "HTML", "CSS", "TypeScript"],
+    skills: ["Python", "SQL", "HTML", "CSS", "TypeScript","JavaScript"],
     color: "text-primary",
     bgColor: "bg-primary/20",
   },
   {
-    title: "Libraries & Frameworks",
-    icon: Database,
-    skills: ["Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Angular"],
+    title: "Data Science & ML",
+    icon: BarChart,
+    skills: ["Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "EDA", "Model Evaluation"],
     color: "text-accent",
     bgColor: "bg-accent/20",
   },
   {
-    title: "Platforms",
-    icon: BarChart,
-    skills: ["Power BI", "Tableau"],
+    title: "Web Development",
+    icon: Database,
+    skills: ["React.js", "Node.js", "Express.js","REST APIs","MongoDB"],
     color: "text-primary-glow",
     bgColor: "bg-primary-glow/20",
   },
   {
-    title: "Concepts",
+    title: "Data Visualization",
     icon: Palette,
-    skills: ["Statistics", "Supervised/Unsupervised ML", "Data Visualization", "Model Evaluation"],
+    skills: ["Power BI", "DAX","Tableau"],
     color: "text-accent-soft",
     bgColor: "bg-accent-soft/20",
   },
+  {
+    title: "Tools & Platforms",
+    icon: Code,
+    Skills: ["Git","GitHub","VS Code","Jupyter Notebook","Google Colab"],
+    color: "text-primary",
+    bgColor: "bg-primary/20",
+  }
 ];
 
 export default function Skills() {

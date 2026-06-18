@@ -44,22 +44,28 @@ export function AboutSection() {
             <div className="gradient-card p-8 rounded-2xl shadow-soft border border-border">
               <h3 className="text-2xl font-semibold mb-6 text-primary">My Story</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-                  Arpita Patnaik is a dedicated and fast-learning data science student with strong 
-                  analytical skills. Proficient in Python (Pandas, NumPy), machine learning 
-                  (Scikit-learn), SQL, and data visualization tools like Power BI, Tableau, 
-                  and Seaborn, she enjoys exploring real-world problems through data.
-                </p>
-                <p>
-                  Currently pursuing her B.Tech in Computer Engineering at Silicon University 
-                  (2023–2027), she's also passionate about clean UI development and has worked 
-                  on various analytical and frontend projects.
-                </p>
-                <p>
-                  With a keen interest in transforming complex data into meaningful insights, 
-                  Arpita combines her technical expertise with creativity to build solutions 
-                  that make a real impact.
-                </p>
+              <p>
+                I'm a results-driven Computer Engineering student with a strong 
+                foundation in data science, full-stack development, and analytical problem-solving. 
+                I'm proficient in Python, SQL, and modern web technologies, with hands-on 
+                experience in building scalable applications using the MERN stack and developing 
+                machine learning models using Scikit-learn.
+              </p>
+
+              <p>
+                Currently pursuing B.Tech at Silicon University, I have worked on impactful 
+                projects such as an Emotion-Aware Decision Support System, Mental Health Risk Analyzer, 
+                and interactive Power BI dashboards. My work focuses on combining data-driven 
+                insights with practical applications, including predictive modeling, feature 
+                engineering, and real-time data visualization.
+              </p>
+
+              <p>
+                I have also gained industry exposure through my internship at IIT Ropar, 
+                where I developed a secure full-stack platform with real-time content monitoring. 
+                With a keen interest in AI and data-driven systems, I aim to build intelligent 
+                solutions that bridge the gap between complex data and meaningful decision-making.
+              </p>
               </div>
             </div>
           </div>
